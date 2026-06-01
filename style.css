@@ -4,14 +4,36 @@
     box-sizing: border-box;
 }
 
+/* THEME VARIABLES */
+:root {
+    --bg: #f8fafc;
+    --text: #1f2937;
+    --muted: #6b7280;
+    --card: #ffffff;
+    --accent: #2563eb;
+    --shadow: rgba(0,0,0,0.08);
+}
+
+/* DARK MODE */
+[data-theme="dark"] {
+    --bg: #0f172a;
+    --text: #e2e8f0;
+    --muted: #94a3b8;
+    --card: #1e293b;
+    --accent: #60a5fa;
+    --shadow: rgba(0,0,0,0.4);
+}
+
+/* BASE */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     max-width: 900px;
     margin: auto;
     padding: 20px;
-    background-color: #f8fafc;
-    color: #1f2937;
+    background-color: var(--bg);
+    color: var(--text);
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
 header {
@@ -20,7 +42,7 @@ header {
 }
 
 .subtitle {
-    color: #666;
+    color: var(--muted);
     margin-top: 10px;
 }
 
@@ -31,7 +53,7 @@ nav {
 nav a {
     text-decoration: none;
     margin: 0 10px;
-    color: #2563eb;
+    color: var(--accent);
     font-weight: bold;
 }
 
@@ -41,15 +63,16 @@ section {
 
 h2 {
     margin-bottom: 15px;
-    color: #1e3a8a;
+    color: var(--text);
 }
 
+/* CARDS */
 .project {
-    background: white;
+    background: var(--card);
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    box-shadow: 0 1px 4px var(--shadow);
 }
 
 .project h3 {
@@ -62,14 +85,27 @@ h2 {
 }
 
 .skills-grid div {
-    background: white;
+    background: var(--card);
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    box-shadow: 0 1px 4px var(--shadow);
 }
 
+/* FOOTER */
 footer {
     text-align: center;
     margin-top: 50px;
-    color: #666;
+    color: var(--muted);
+}
+
+/* THEME BUTTON */
+#theme-toggle {
+    margin-top: 20px;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background: var(--accent);
+    color: white;
+    font-weight: bold;
 }
