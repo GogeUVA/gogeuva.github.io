@@ -21,23 +21,32 @@
             <a href="#contact">Contact</a>
         </nav>
 
-        <button id="theme-toggle">Toggle Dark Mode</button>
+        <button id="theme-toggle">Toggle Theme</button>
     </header>
 
     <section id="about">
         <h2>About Me</h2>
 
         <p>
-            Computer science student at the University of Virginia with interests in software development and cybersecurity.
-            Experienced with Python and Java through university coursework and extracurricular activities.
+            Computer science student at the University of Virginia with interests in 
+            software development, cybersecurity, cloud computing, and mobile application development.
         </p>
 
         <p>
-            Expected Graduation: May 2027
+            Bachelor's in Computer Science 
+                Expected May 2027
+        <p>
+
+        </p>
+            Master's in Computer Science (UVAccelerate, accelerated program) 
+                Expected May 2028
         </p>
 
         <p>
-            AWS Certified Cloud Practitioner
+            AWS Certified Cloud Practitioner:
+            <a href="https://www.credly.com/badges/ceb8f29d-d2fb-4cbb-93ba-fb5bb4ce60a7 " target="_blank">
+                View Badge
+            </a>
         </p>
 
         <p>
@@ -49,15 +58,39 @@
         <h2>Projects</h2>
 
         <div class="project">
+            <h3>Task Tracker iOS App</h3>
+                
+            <img 
+                src="images/task-tracker.png" 
+                alt="Task Tracker iOS App Screenshot" 
+                class="project-image"
+            >
+
+            <p>
+                Native iPhone task management application built with Swift and Xcode. 
+                Users can create, delete, and track tasks while maintaining data across 
+                app launches through local persistence.
+            </p>
+
+            <p><strong>Tech:</strong> Swift, SwiftUI, SwiftData, Xcode</p>
+
+            <a href="https://github.com/GogeUVA/FirstXcodeApp" target="_blank">
+                GitHub Repository
+            </a>
+        </div>
+
+        <div class="project">
             <h3>Serverless Discord Bot</h3>
 
             <p>
                 Built a serverless Discord bot using Cloudflare Workers,
                 Cloudflare D1, and Discord Interactions API.
-                Supports persistent note management and weather lookups.
+                Supports persistent note management with full CRUD functionality and 
+                integrates weather.gov RESTful API to provide real-time weather information 
+                directly within Discord servers.
             </p>
 
-            <p><strong>Tech:</strong> JavaScript, Cloudflare Workers, D1 SQL</p>
+            <p><strong>Tech:</strong> JavaScript, Cloudflare Workers, Cloudflare D1, SQL</p>
 
             <a href="https://github.com/GogeUVA/first-cloudflare-app" target="_blank">
                 GitHub Repository
@@ -65,25 +98,29 @@
         </div>
 
         <div class="project">
-            <h3>Course Review Application</h3>
+            <h3>Port Scanner (Course Project)</h3>
 
             <p>
-                Desktop application allowing students to create, store,
-                and browse course reviews.
-            </p>
-
-            <p><strong>Tech:</strong> Java, JavaFX, SQLite</p>
-        </div>
-
-        <div class="project">
-            <h3>Port Scanner</h3>
-
-            <p>
-                Python-based networking tool that automates TCP port discovery
-                and analyzes connection states.
+                Network reconnaissance tool developed in Python that automates TCP port 
+                discovery and analyzes connection states on target hosts.
+                Created as part of Intro to Cybersecurity coursework to explore socket 
+                programming and network analysis concepts.
             </p>
 
             <p><strong>Tech:</strong> Python, Socket Programming</p>
+        </div>
+        
+        <div class="project">
+            <h3>Course Review Application (Course Project)</h3>
+
+            <p>
+                Desktop application that allows students to submit, store, and browse 
+                course reviews through a graphical user interface. Built for 
+                Software Development Essentials course at UVA, utilizing JavaFX 
+                for the frontend and SQLite for data persistence.
+            </p>
+
+            <p><strong>Tech:</strong> Java, JavaFX, SQLite</p>
         </div>
     </section>
 
@@ -93,21 +130,28 @@
         <div class="skills-grid">
             <div>
                 <h3>Languages</h3>
-                <p>Python, Java, C, SQL, JavaScript</p>
+                <p>Python, Java, C, SQL, JavaScript, Swift</p>
+            </div>
+
+            <div>
+                <h3>Technologies</h3>
+                <p>
+                    Node.js, Cloudflare Workers,
+                    Cloudflare D1, AWS, RESTful APIs
+                </p>
             </div>
 
             <div>
                 <h3>Tools</h3>
                 <p>
-                    Git, Node.js, Cloudflare Workers,
-                    Cloudflare D1, AWS, Wireshark, Ghidra
+                    Git, Ghidra, Wireshark, AI-powered code assistants (ChatGPT, Copilot, Gemini)
                 </p>
             </div>
 
             <div>
                 <h3>IDEs</h3>
                 <p>
-                    VS Code, IntelliJ IDEA, PyCharm
+                    Xcode, VS Code, IntelliJ IDEA, PyCharm
                 </p>
             </div>
         </div>
